@@ -1,0 +1,7 @@
+@use '../../style' as s;
+
+@use '../../style/form.scss' as form;
+
+.back-button{
+	@include s.click;
+}
