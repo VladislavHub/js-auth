@@ -17,8 +17,12 @@ class FieldSelect {
   }
 
   static change = (target) => {
-    const active =
-      target.parentElement.querySelector('*[active')
+    const parent = target.parentElement.parentElement
+    const list = target.parentElement
+
+    // ===
+
+    const active = list.querySelector('*[active]')
 
     if (active) active.toggleAttribute('active')
 
@@ -28,8 +32,6 @@ class FieldSelect {
 
     // ===
 
-    const parent = target.parentElement.parentElement
-
     const value = parent.querySelector('.field__value')
 
     if (value) {
@@ -38,8 +40,6 @@ class FieldSelect {
     }
 
     // ===
-
-    const list = target.parentElement
 
     list.toggleAttribute('active')
   }

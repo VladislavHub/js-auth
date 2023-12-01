@@ -2,13 +2,13 @@
 @use '../field/index.scss' as field;
 
 .field--password{
-	.field_wrapper{
+	.field__wrapper{
 		width: 100%;
 		display: grid;
 
 		position: relative;
 
-		& .field_icon{
+		& .field__icon{
 			@include s.click;
 
 			display: block;
